@@ -1,0 +1,499 @@
+.header{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/71ec72f0-c17a-4100-a2a3-a52e7b8ac733/IN-en-20230612-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    width: 100%;
+    height: 43.75rem;
+    position: relative;
+}
+
+.fade_top{
+    height: 22.5rem;
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.61),#000000);
+}
+
+.fade_bottom{
+    height: 22rem;
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.61),#000000);
+}
+
+.nav{
+    top: 0;
+    width: 100%;
+    padding: 1.25rem;
+    height: 1.875;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+}
+
+.nav_img{
+    position: absolute;
+    top: 1.25rem;
+    left: 9.3rem;
+    width: 9.3rem;
+    object-fit: contain;
+}
+
+.nav_button{
+    color: white;
+    background-color: red;
+    padding: 8px 5px 8px 5px;
+    border: none;
+    border-radius: 5px;
+    top: 1.25rem;
+    position: absolute;
+    right: 9.3rem;
+    width: 6.25rem;
+    font-size: 15px;
+    font-weight: 600;
+    object-fit: contain;
+    cursor: pointer;
+}
+.nav_button:hover{
+    color: red;
+    background-color: white;
+}
+
+.header_contents{
+    position: absolute;
+    top: 15.62rem;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.header_contents h1 {
+    padding: 1.25rem;
+    font-size: 2.8rem;
+}
+
+.header_contents h2 {
+    font-weight: 400;
+}
+
+.header_contents p {
+    padding: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.register_input {
+    padding: 1.25rem;
+    padding-right: 5rem;
+    background-color: rgb(31, 31, 31);
+    opacity: 0.7;
+    border: 0.06rem solid black;
+    outline: none;
+    border-radius: 0.31rem;
+    margin-right: 0.6rem;
+}
+.register_input:focus{
+    color: white;
+}
+.register_input::placeholder{
+    color: white;
+    font-size: 0.93rem;
+}
+
+.register.invalid input{
+    border-color: red;
+    background: #fbdada;
+}
+
+.register.invalid input:focus{
+    color: #000000;
+}
+
+.error p{
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    left: 32.5rem;
+    bottom: -2.3rem;
+    display: none;
+}
+
+.errorMsg p{
+    display: block;
+}
+
+.register_button{
+    background-color: red;
+    color: white;
+    padding: 0.81rem;
+    padding-right: 1.25rem;
+    font-size: 1.37rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.register_button:hover{
+    background-color: white;
+    color: red;
+}
+
+.watch{
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1627873649417-c67f701f1949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.watch_container{
+    margin-top: 200px;
+    margin-left: -80px;
+    text-align: left;
+}
+
+.watch_container h1{
+    color: white;
+    width: 80%;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.watch_container p{
+    color: white;
+    width: 60%;
+    font-size: 25px;
+}
+
+.downloads{
+    margin-top: 20px;
+    background-color: black;
+    display: flex;
+    height: 35rem;
+}
+
+.download_container{
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.download_container .movie_img{
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.download_img_sm{
+    border: 1px solid rgb(101, 101, 101);
+    background-color: black;
+    border-radius: 8px;
+    position: absolute;
+    display: flex;
+    top: 400px;
+    left: 220px;
+}
+
+.download_img_sm .movie_img_sm{
+    width: 15%;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.download_movie{
+    color: white;
+    margin: 20px;
+}
+
+.downloads .download_movie p{
+    color: rgb(98, 98, 242);
+    font-size: 15px;
+}
+
+.download_logo{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.7rem;
+    width: 4rem;
+    height: 3rem;
+    outline: 2px solid rgba(0, 0, 0, 1);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.download_desc{
+    position: absolute;
+    top: 12.5rem;
+}
+
+.download_container h1{
+    color: white;
+    width: 80%;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.download_container p{
+    color: white;
+    width: 60%;
+    font-size: 25px;
+}
+
+.multidevice{
+    background-image: url("https://media.istockphoto.com/id/1393912474/photo/minimal-black-office-workspace-background-with-smartphone-mockup-and-tablet-black-screen.jpg?s=612x612&w=0&k=20&c=SGAd1QGFExdLcOkC8lVcjHjHSbElZ0161Nu_gkVhcOc=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    margin-top: 25px;
+    position: relative;
+}
+
+.multi_device_desc{
+    position: absolute;
+    text-align: left;
+    top: 12.5rem;
+    left: 14rem;
+}
+
+.multi_device_desc h1{
+    color: white;
+    width: 80%;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.multi_device_desc p{
+    color: white;
+    width: 60%;
+    font-size: 25px;
+}
+
+.multidevice .fade_bottom{
+    height: 13rem;
+}
+
+footer{
+    background-color: black;
+    margin-top: 30px;
+    width: 100%;
+    height: 26.6rem;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 120px 100px 200px;
+}
+
+.footerItem{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;
+    text-align: center; */
+}
+
+.fTitle{
+    font-size: 18px;
+    color: rgb(162, 162, 162);
+    padding-bottom: 20px;
+}
+
+.fList{
+    list-style: none;
+    padding: 0;
+}
+
+.fListItem{
+    color: rgb(162, 162, 162);
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ .copyright{
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+} 
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 1100px)  {
+    .header{
+        height: 480px;
+        overflow: hidden;
+    }
+
+    .fade_bottom{
+        height: 128px;
+    }
+
+    .nav_img{
+        width: 128px;
+        left: 32px;
+    }
+
+    .nav_button{
+        width: 64px;
+        right: 16px;
+    }
+
+    .header_contents{
+        text-align: left;
+        top: 112px;
+        padding: 20px;
+    }
+
+    .header_contents h1 {
+        padding: 19.2px 19.2px 19.2px 1.6px;
+        font-size: 32px;
+    }
+
+    .header_contents h2 {
+        font-weight: 300;
+        font-size: 20.8px;
+    }
+
+    .header_contents p {
+        padding: 16px 19.2px 19.2px 1.6px;
+        font-size: 16px;
+    }
+
+    .register_input{
+        padding: 10.5px;
+    }
+
+    .error p{
+        font-size: 11.2px;
+        bottom: -16px;
+        left: 20.8;
+    }
+
+    .register_button{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 8px;
+    }
+
+    .watch{
+        height: 480px;
+        background-size: contain;
+    }
+    .watch_container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 150px;
+        padding: 24px;
+    }
+    .watch_container h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .watch_container p{
+        font-size: 18px;
+    }
+
+    .downloads{
+        height: 480px;
+        padding-right: 20px;
+    }
+    .download_container {
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+    }
+    .download_container .movie_img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .download_img_sm{
+        top: 100px;
+        left: 100px;
+        width: 180px;
+    }
+    .download_img_sm .movie_img_sm{
+        width: 15%;
+        max-height: 50px;
+    }
+    .download_movie{
+        width: 20%;
+        padding: 10px;
+        margin: 0;
+    }
+    .downloads .download_movie h3{
+        font-size: 12px;
+    }
+    .downloads .download_movie p{
+        font-size: 10px;
+    }
+    .download_logo{
+        position: absolute;
+        width: 32px;
+        right: 0;
+        top: 9.6px;
+    }
+    .download_container h1{
+        width: 100%;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .download_container p{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .multidevice{
+        background-size: contain;
+        height: 480px;
+    }
+    .multi_device_desc{
+        width: 60%;
+        top: 128px;
+        left: 24px;
+    }
+    .multi_device_desc h1{
+        width: 100%;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .multi_device_desc p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .multidevice .fade_bottom{
+        height: 128px;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+    }
+    .footerItems{
+        padding: 10px;
+    }
+    .fTitle{
+        font-size: 15px;
+    }
+    .fListItem{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}

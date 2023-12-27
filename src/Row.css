@@ -1,0 +1,91 @@
+.row{
+    color: white;
+}
+
+/* .poster{
+    margin-right: 20px;
+    position: relative;
+    transition: transform 450ms;
+}
+
+.poster:hover{
+    transform: scale(1.08);
+
+} */
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    object-fit: contain;
+    width: 100%; 
+    max-height: 100px;
+    margin-right: 20px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.row_posterLarge{
+    max-height: 250px;
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+/* .row_buttons{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+} */
+
+/* .row_buttons:hover{
+    z-index: 2;
+}
+
+.play_button{
+    width: 0;
+    height: 0;
+    margin-right: 20px;
+    border-top: 15px solid transparent;
+    border-left: 20px solid red;
+    border-bottom: 15px solid transparent;
+    border-right: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.info_button{ 
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(83, 83, 83);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+} */
+
+@media screen and (max-width:480px){
+    .row_poster{
+        object-fit: contain;
+        width: 100%;
+        max-height: 6rem;
+        margin-right: 0.6rem;
+        transition: transform 450ms;
+    }
+    .row_posterLarge{
+        max-height: 200px;
+    }
+}
